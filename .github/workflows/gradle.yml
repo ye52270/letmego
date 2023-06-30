@@ -17,7 +17,7 @@ env:
    S3_BUCKET_NAME: izocuna-bucket
    CODE_DEPLOY_APPLICATION_NAME: CODE-DEPLOY-TEST
    CODE_DEPLOY_DEPLOYMENT_GROUP: CODE-DEPLOY-GROUP
-   RESOURCE_PATH : ./src/main/resources/application.yaml
+   RESOURCE_PATH : ./src/main/resources/application.yml
 
 permissions:
   contents: read
