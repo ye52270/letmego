@@ -36,12 +36,12 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Set yaml yaml variables
-      uses: microsoft/variable-substitution@v1
-      with:
-        files: ${{ env.RESOURCE_PATH }}
-      env:
-        override.server : ${ secrets.DI_FROM_SECRET }}
+#    - name: Set yaml yaml variables
+#      uses: microsoft/variable-substitution@v1
+#      with:
+#        files: ${{ env.RESOURCE_PATH }}
+#      env:
+#        override.server : ${ secrets.DI_FROM_SECRET }}
 
     - name: Build with Gradle
       uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
