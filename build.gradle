@@ -36,3 +36,9 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+//  **plain.jar 파일을 build 하지 않는다(class / resource 만 포함하고 있어서 java -jar 옵션으로 jar 파일을 실행할 수 없다
+jar {
+    enabled = false
+}
+
